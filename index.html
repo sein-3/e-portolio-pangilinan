@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Wilhelm Vincent Pangilinan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Wilhelm Vincent Pangilinan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpg" alt="Wilhelm Vincent Pangilinan profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Wilhelm Vincent <br> Pangilinan</h1>
+        <p class="section__text__p2">BS Computer Science Major in Network and Information Security</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/PANGILINAN_WilhelmVincentResume.pdf')"
+          >
+            Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='www.linkedin.com/in/wilhelm-vincent-pangilinan-4b7926300'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/sein-3'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          
+          <div class="text-container">
+            <p>
+                My journey through the Computer Science program at De La Salle University was both challenging and deeply rewarding. 
+                While mastering complex concepts in computer architecture, networking protocols, and cybersecurity demanded countless 
+                late nights and intense study sessions, each breakthrough strengthened my foundation in technology. 
+                The rigorous curriculum pushed me beyond my comfort zone, teaching me not just technical skills, but also resilience 
+                and problem-solving capabilities that prove invaluable in my professional work. The hands-on projects and collaborative 
+                learning environment helped transform theoretical knowledge into practical expertise, preparing me for real-world 
+                challenges in the ever-evolving tech landscape.
+            </p>
+            <br/>
+            <p>
+                My APQ and PCK assessments reveal strong analytical abilities with high scores in arithmetic reasoning and verbal skills (99th percentile). I show a practical, logical decision-making approach with resilience under stress, though I could improve on assertiveness. The results strongly align with technical careers, particularly in engineering and technology fields (87% match rate), validating my choice of Computer Science as it matches my strengths in systematic problem-solving and technical analysis.
+            </p>
+          </div>
+          <br/>
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Virtual Machine Creation<br/>Network Configuration<br/>Cisco Packet Tracer<br/>Kali Linux</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>De La Salle University - Manila</p>
+              <p>BS in Computer Science<br />Major in Network and Information Security</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="lslinks">
+        
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:pangilinan.wilhelmvincent@gmail.com">pangilinan.wilhelmvincent@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="www.linkedin.com/in/wilhelm-vincent-pangilinan-4b7926300">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Wilhelm Vincent Pangilinan. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
